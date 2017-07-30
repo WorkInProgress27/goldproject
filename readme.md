@@ -7,3 +7,6 @@ test 3rd commit
 </h2> item </h2>
 
 <h1> IMAGE </h1>
+
+
+This is modified by krishna which was originally written by uma. 
