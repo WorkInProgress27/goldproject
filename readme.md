@@ -12,3 +12,6 @@ test 3rd commit
 This is modified by krishna which was originally written by uma. 
 
 Trying to commit
+
+Only could clone with https. 
+Getting error when tried to clone with ssh.
