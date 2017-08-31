@@ -1,0 +1,178 @@
+<html>
+<head>
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<meta charset=utf-8 />
+<title> 10.160.2.185/gold.html</title>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+  article, aside, figure, footer, header, hgroup, 
+  menu, nav, section { display: block; }
+</style>
+</head>
+
+<h1 align="center">gold bill</h1>
+<style>
+body{
+
+ border: 10px solid black;
+    padding: 35px;
+    background: image.jpg;
+    background-repeat: no-repeat;
+	background-size: 1580px 1560px;								
+	background-position: 10px 10px; 
+
+
+   
+	}
+
+
+</style>
+
+
+<!--<align ="right-side" ><script language="javascript" type="text/javascript">
+/* Visit http://www.yaldex.com/ for full source code
+and get more free JavaScript, CSS and DHTML scripts! */
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+</script><br><center><br>
+-->
+
+<!-- Adjust the placement of the clock in the line below -->
+<!--
+<font color=black ><span id="pendule" ></span>
+<script language="javascript" type="text/javascript">
+<!-- Begin
+function clock() {
+var digital = new Date();
+var hours = digital.getHours();
+var minutes = digital.getMinutes();
+var seconds = digital.getSeconds();
+var amOrPm = "AM";
+if (hours > 11) amOrPm = "PM";
+if (hours > 12) hours = hours - 12;
+if (hours == 0) hours = 12;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+dispTime = '<b>'+hours + ":" + minutes + ":" + seconds + " " + amOrPm+'</b>';
+document.getElementById('pendule').innerHTML = dispTime;
+setTimeout("clock()", 1000);
+}
+window.onload=clock;
+//  End -->
+</script>
+
+<p id="date"></p>
+<!--<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+-->
+<script align="right">
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+</script>
+<script>function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+<p id="date"></p>
+<body  background="image.jpg" no-repeat>
+<img id="blah" src="#" alt="your image" />
+
+<form>
+  <table width="80%" border="0" cellpadding="5" cellspacing="5">
+    <tr>
+      <td colspan="2">Name:</td>
+      <td width="54%"><input type="text" name="name" id="name"></td>
+    </tr>
+    <tr>
+      <td colspan="2"> phone:</td>
+      <td><input type="text" name="phone" id="desg"></td>
+    </tr>
+    <!--<tr>
+      <td width="31%" rowspan="3">Organization Address:      </td>
+      <td width="15%">Line1</td>
+      <td><input type="text" name="org1" id="org1"></td>
+    </tr>
+    <tr>
+      <td>Line2</td>
+      <td><input type="text" name="org2" id="org2"></td>
+    </tr>
+    <tr>
+      <td>Line3</td>
+      <td><input type="text" name="org3" id="org3"></td>
+    </tr>-->
+    <tr>
+      <td rowspan="3">Residential Address:      </td>
+      <td>Line1</td>
+      <td><input type="text" name="res1" id="res1"></td>
+    </tr>
+    <tr>
+      <td>Line2</td>
+      <td><input type="text" name="res2" id="res2"></td>
+    </tr>
+    <tr>
+      <td>Line3</td>
+      <td><input type="text" name="res3" id="res3"></td>
+    </tr>
+    <!--<tr>
+      <td colspan="2">Telephone / Cellphone Number</td>
+      <td><input type="text" name="tel" id="tel"></td>
+    </tr>
+	-->
+    <tr>
+      <td colspan="2">Item Name :</td>
+      <td><input type="text" name="Item Name" id="Item Name"></td>
+    </tr>
+    <tr>
+      <td colspan="2">weight</td>
+      <td><input type="text" name="weight" id="weight"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Karat</td>
+      <td><input type="text" name="Karat" id="Karat"></td>
+    </tr>
+    <!--<tr>
+      <td colspan="2">Remarks:</td>
+      <td><input type="text" name="rem" id="rem"></td>
+    </tr>-->
+  </table>
+  <p><br><br>
+    <input type='file' onchange="readURL(this);" />
+    
+    
+   <input type="submit" value="submit" onclick="window.print()">
+    <input type="reset" name="reset" id="reset" value="Reset">
+	
+  </p>
+</form>
+
+</body>
+</html>
